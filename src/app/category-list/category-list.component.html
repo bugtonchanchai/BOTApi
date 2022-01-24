@@ -2,11 +2,11 @@
 <div *ngIf="categoryListResult">
   <ul class="categoryListResult">
     <li *ngFor="let item of categoryListResult.result.category" class="mb-3">
-      {{item.category}} <a routerLink="/series-list/{{item.category}}">
+      <b>{{item.category}}</b> <a routerLink="/series-list/{{item.category}}">
         [series list]
       </a><br />
-      description_th: {{item.description_th}} <br />
-      description_eng: {{item.description_eng}}
+      <b>description_th:</b> {{item.description_th}} <br />
+      <b>description_eng:</b> {{item.description_eng}}
     </li>
   </ul>
 </div>
